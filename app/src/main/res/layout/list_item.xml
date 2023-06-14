@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp">
+
+
+        <CheckBox
+            android:id="@+id/done_Box"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+
+            android:scaleX="1.50"
+            android:scaleY="1.50"
+            android:button="@drawable/checkbox_done_selector"
+            />
+        <TextView
+            android:id="@+id/task_recycler_info"
+            android:layout_width="180dp"
+
+            android:layout_height="match_parent"
+            android:text="CheckBox"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            />
+        <CheckBox
+            android:id="@+id/important_Box"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleX="1.30"
+            android:scaleY="1.40"
+            android:button="@drawable/checkbox_selector" />
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/ic_delete_button"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

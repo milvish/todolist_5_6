@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">todolist_bottom</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="task_name_info">Task name</string>
+    <string name="task1">1</string>
+    <string name="task2">2</string>
+    <string name="task3">3</string>
+    <string name="task4">4</string>
+    <string name="task5">5</string>
+    <string name="task6">6</string>
+    <string name="task7">7</string>
+    <string name="task8">8</string>
+    <string name="task9">9</string>
+    <string name="task10">10</string>
+    <string name="task11">11</string>
+    <string name="task12">12</string>
+    <string name="task13">13</string>
+    <string name="task14">14</string>
+    <string name="task15">15</string>
+    <string name="task16">16</string>
+    <string name="task17">17</string>
+    <string name="task18">18</string>
+    <string name="task19">19</string>
+    <string name="task20">20</string>
+    <string name="task21">21</string>
+    <string name="task22">22</string>
+    <string name="task23">23</string>
+    <string name="task24">24</string>
+</resources>

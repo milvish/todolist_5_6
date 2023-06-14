@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/nav_all_task">
+
+    <fragment
+        android:id="@+id/nav_all_task"
+        android:name="ru.ulizina.todolist_bottom.ui.all_tasks.AllTasksFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_all_tasks"
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true">
+        <action
+            android:id="@+id/action_navigation_all_task_to_addTaskFragment"
+            app:destination="@id/nav_add_task" />
+        <action
+            android:id="@+id/action_navigation_all_task_to_taskInfoFragment"
+            app:destination="@id/nav_task_info" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_add_task"
+        android:name="ru.ulizina.todolist_bottom.ui.add_task.AddTaskFragment"
+        android:label="AddTaskFragment"
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true"/>
+
+    <fragment
+        android:id="@+id/nav_task_info"
+        android:name="ru.ulizina.todolist_bottom.ui.task_info.TaskInfoFragment"
+        android:label="TaskInfoFragment"
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true">
+        <action
+            android:id="@+id/action_taskInfoFragment_to_changeTaskFragment"
+            app:destination="@id/nav_change_task" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_done_tasks"
+        android:name="ru.ulizina.todolist_bottom.ui.done_task.DoneTasksFragment"
+        android:label="DoneTasksFragment" >
+        <action
+            android:id="@+id/action_doneTasksFragment_to_addTaskFragment"
+            app:destination="@id/nav_add_task" />
+        <action
+            android:id="@+id/action_doneTasksFragment_to_taskInfoFragment"
+            app:destination="@id/nav_task_info" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_important_tasks"
+        android:name="ru.ulizina.todolist_bottom.ui.important_tasks.ImportantTasksFragment"
+        android:label="ImportantTasksFragment" >
+        <action
+            android:id="@+id/action_importantTasksFragment_to_addTaskFragment"
+            app:destination="@id/nav_add_task" />
+        <action
+            android:id="@+id/action_importantTasksFragment_to_taskInfoFragment"
+            app:destination="@id/nav_task_info" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_change_task"
+        android:name="ru.ulizina.todolist_bottom.ui.change_task.ChangeTaskFragment"
+        android:label="ChangeTaskFragment" />
+
+
+</navigation>
